@@ -1,9 +1,27 @@
 
+
+
 spring:
+    application:
+        name: cranberry
+    main:
+        lazy-initialization: false
     datasource:
-        url: jdbc:h2:mem:mydb
+        url: jdbc:h2:mem:cranberrydb
         username: sa
         password: password
         driverClassName: org.h2.Driver
         jpa:
             spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+server:
+    servlet:
+        context-path: /cranberry
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+        health:
+            show-details: always
+            show-components: always
