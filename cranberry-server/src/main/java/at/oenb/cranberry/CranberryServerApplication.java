@@ -12,3 +12,4 @@ public class CranberryServerApplication {
         SpringApplication.run(CranberryServerApplication.class, args);
     }
 }
+

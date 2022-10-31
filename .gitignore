@@ -1,2 +1,4 @@
 
 .idea
+target/
+cranberry-server/target
